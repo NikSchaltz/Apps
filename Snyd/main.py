@@ -18,7 +18,7 @@ class MainApp(App):
         #self.load_lines_from_txt("dices.txt")
 
         self.diceNum = 6
-        self.showDice = True
+        self.showDice = False
 
         self.box = BoxLayout(orientation='vertical')
         self.DiceBox = BoxLayout(orientation='vertical', size_hint=(1, 0.80))
