@@ -7,18 +7,12 @@ import csv
 import random
 
 class MainApp(App):
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
-        self.lines = []
-        self.used_inDice = set()
-        self.current_text = "Press the button to get a line"
 
-    
     def build(self):
         #self.load_lines_from_txt("dices.txt")
 
         self.diceNum = 6
-        self.showDice = True
+        self.showDice = False
 
         self.box = BoxLayout(orientation='vertical')
         self.DiceBox = BoxLayout(orientation='vertical', size_hint=(1, 0.80))
